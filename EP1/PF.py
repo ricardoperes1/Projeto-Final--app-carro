@@ -16,14 +16,49 @@ class Carros(): #objeto
         self.desvalorizacao = desvalorizacao
     pass
 
-carros = {"carros":{}}
+faixapreco = bool(input("Filtrar por preço?")) # perguntar sim ou nao
+if faixapreco:
+    precomin = int(input("Preço mínimo: "))
+    precomax = int(input("Preço máximo: "))
+    faixapreco = [precomin,precomax]
+
+categoria = 
+
+def printcarros(faixapreco,)
 
 
-carros["carros"][civic.modelo] = Carros("honda","civic","si",160000,"sedä esportivo",3,3,4,3,4,1,3)
+
+
+
+
+
+
+def addcarro(marca, modelo, versao, preco, categoria, espaco_interno, economia, desempenho, conforto, seguranca, custo_beneficio, desvalorizacao):
+    carros["carros"][modelo] = Carros(marca, modelo, versao, preco, categoria, espaco_interno, economia, desempenho, conforto, seguranca, custo_beneficio, desvalorizacao)
+    
+#def printCarros():
+    
+    
+    
+    
+carros = {"carros":{}} ### temporario
+
+
+userinput = addCarro("honda","civic","si",160000,"sedä esportivo",3,3,4,3,4,1,3) # criar inputs
+userinput2 = addCarro("VW","up","speed", 50000,"subcompacto",4,5,4,2,5,2,2)
+
+## Printa modelos e versoes
+for i in carros["carros"]:
+    if carros["carros"][i].marca == "VW":
+        print(carros["carros"][i].modelo, carros["carros"][i].versao)
+
+
+
+#carros["carros"][civic.modelo] = Carros(c)
  
-carros["carros"][up.modelo] = Carros("VW","up","speed", 50000,"subcompacto",4,5,4,2,5,2,2)
+#carros["carros"][up.modelo] = Carros("VW","up","speed", 50000,"subcompacto",4,5,4,2,5,2,2)
 
-print(carros["carros"]["up"].modelo,carros["carros"]["])
+#print(carros["carros"]["up"].modelo,carros["carros"]["])
 
 # Lendo dic com os carros
 
